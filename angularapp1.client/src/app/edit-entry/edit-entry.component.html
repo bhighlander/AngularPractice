@@ -1,0 +1,20 @@
+<div *ngIf="entry">
+  <form (ngSubmit)="updateEntry()">
+    <label>
+      Name:
+      <input [(ngModel)]="entry.name" name="name" required>
+    </label>
+    <br>
+    <label>
+      Title:
+      <input [(ngModel)]="entry.title" name="title" required>
+    </label>
+    <br>
+    <label>
+      Job Description:
+      <input [(ngModel)]="entry.jobDescription" name="jobDescription" required>
+    </label>
+    <br>
+    <button type="submit">Save</button>
+  </form>
+</div>
